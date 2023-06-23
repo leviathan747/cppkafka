@@ -1,9 +1,7 @@
-cmake_minimum_required(VERSION 3.9.2)
+cmake_minimum_required(VERSION 3.5)
 project(CppKafka)
-if (${CMAKE_VERSION} VERSION_GREATER_EQUAL "3.12.0")
-    # Use <package>_ROOT variable to find configuration files
-    cmake_policy(SET CMP0074 NEW)
-endif()
+
+set(CMAKE_CXX_STANDARD 11)
 
 include(GNUInstallDirs)
 include(CMakePackageConfigHelpers)
